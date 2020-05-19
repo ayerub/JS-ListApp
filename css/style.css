@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+  background-color: lightgreen;
+  width: 236px;
+  border-radius: 20px;
+}
+
+.container h2 {
+  padding-top: 2px;
+  padding-left: 10px;
+  font-size: 1.5em;
+  
+}
+
+.container button {
+  font-size: 1.6em;
+}
+
+.new-list-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 1em;
+  margin-left: 25px;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+.new-list-btn:hover {
+  background-color: rgb(240, 110, 110);
+}
+
+.list-heading {
+  font-size: 1.7em;
+  width: 260px;
+  margin: 10px;
+  margin-left: 20px;
+  padding-bottom: 6px;
+  background-color: rgba(173, 216, 230, 0);
+  border: none;
+  border-bottom: dotted 2px black;
+}
+
+.list-container {
+  /* display: none; */
+  display: inline-block;
+  margin: 20px;
+  background-color: lightblue;
+  border-radius: 5px;
+}
+
+.menu-btn {
+  display: inline-block;
+  margin: 3.5px;
+  padding: 5px;
+}
+
+.menu-btn button {
+  cursor: pointer;
+  width: 22px;
+  height: auto;
+  background-color: rgba(173, 216, 230, 0);
+  border: none;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  left: 220px;
+  top: 139px;
+  width: 130px;
+  height: 122px;
+  background-color: rgba(211, 211, 211, 0.95);
+  box-shadow: black 0 0 2px;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.menu .color-btn {
+  display: inline-block;
+}
+
+.color-btn button {
+  width: 25px;
+  height: 25px;
+  margin: 7px;
+  border: none;
+  border-radius: 50%;
+}
+
+.color-btn button:hover {
+  cursor: pointer;
+  box-shadow: rgb(37, 36, 36) 0 0 0 .75px;
+  transition: .4s;
+}
+
+.delete-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 3px;
+  border-bottom: dotted black 2px;
+  margin: 0 10px 8px 10px;
+}
+
+.delete-list button {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(211, 211, 211, 0);
+  font-size: 1em;
+}
+
+.delete-list button:hover {
+  cursor: pointer;
+  box-shadow: rgb(37, 36, 36) 0 0 0 .75px;
+  transition: .4s;
+}
+
+.red button {
+  background-color: lightcoral;
+}
+
+.blue button {
+  background-color: lightblue;
+}
+
+.green button {
+  background-color: lightgreen;
+}
+
+.teal button {
+  background-color: lightseagreen;
+}
+
+.yellow button {
+  background-color: lightyellow;
+}
+
+.orange button {
+  background-color: lightsalmon;
+}
+
+/* List Items */
+.list li {
+  list-style: none;
+  margin: 8px 20px;
+  font-size: 1.3em;
+}
+
+.list li:last-child {
+  margin-bottom: 10px;
+}
+
+.list li:hover {
+  cursor: pointer;
+}
+
+.list li.checked {
+  text-decoration: line-through;
+}
+
+.input-container {
+  display: flex;
+  margin: 10px;
+}
+
+.addItemBtn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 1.3em;
+  margin: 5px;
+  background-color: #30B948;
+  border: none;
+  border-radius: 50%;
+}
+
+.addItemBtn:hover {
+  box-shadow: black 0 0 5px;
+  background-color: #30B948;
+  transition: .4s;
+}
+
+li > button {
+  cursor: pointer;
+  float: right;
+  font-size: .9em;
+  padding-bottom: 1px;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(240, 128, 128, 0);
+  border: none;
+  border-radius: 5px;
+} 
+
+li > button:hover {
+  box-shadow: black 0 0 5px;
+  transition: .4s;
+}
+
+.userInput {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3em;
+}
+
+.crossOut {
+  text-decoration: line-through;
+  text-decoration-color: lightcoral;
+  list-style: none;
+  margin: 2px 20px;
+  font-size: 1.3em;
+}
+
+.delete {
+  display: none;
+}

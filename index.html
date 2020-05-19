@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create New List</h2>
+      <button class="new-list-btn">+</button>
+    </div>
+    <div class="list-container">
+      <input type="text" placeholder="List Title" class="list-heading">
+      <div class="menu-btn">
+        <button><img src="img/ellipsis-h-solid.svg"></button>
+      </div>
+      <div class="menu">
+        <div class="delete-list">
+          <h3>Delete</h3>
+          <button class="delete-list-btn">x</button>
+        </div>
+        <div class="color-btn red"><button></button></div>
+        <div class="color-btn blue"><button></button></div>
+        <div class="color-btn green"><button></button></div>
+        <div class="color-btn teal"><button></button></div>
+        <div class="color-btn yellow"><button></button></div>
+        <div class="color-btn orange"><button></button></div>
+      </div>
+      <ul class="list"></ul>
+      <div class="input-container">
+        <input type="text" placeholder="list item" class="userInput">
+        <button class="addItemBtn"> + </button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
