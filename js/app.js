@@ -1,5 +1,6 @@
 // Create new blank list variables
 const createNewListBtn = document.querySelector('.new-list-btn');
+const body = document.querySelector('body');
 const blankList = document.querySelector('.list-container');
 const newList = blankList.cloneNode(true);
 
@@ -27,7 +28,7 @@ const orangeBtn = document.querySelector('.orange');
 // ----------------------------------------------------
 
 function newListFunc() {
-  document.body.appendChild(newList);
+  body.appendChild(newList); // will append a new list container to the body variable
   // blankList.style.display='inline-block';
 }
 
