@@ -29,7 +29,7 @@ const orangeBtn = document.querySelector('.orange');
 
 function newListFunc() {
   body.appendChild(newList); // will append a new list container to the body variable
-  blankList.style.display='flex';
+  // blankList.style.display='flex';
 }
 
 function toggleMenu() {
