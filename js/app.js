@@ -1,9 +1,10 @@
-// Create new blank list variables
+// // Create new blank list variables
 const createNewListBtn = document.querySelector('.new-list-btn');
 const body = document.querySelector('body');
+const listContainer = document.querySelector('.list-container');
 
 // delete list
-const deleteList = document.querySelector('.list-container');
+const deleteList = document.querySelector('.delete-btn');
 
 // Add items to list variable
 const addBtn = document.querySelector('.add-item-btn');
@@ -19,6 +20,9 @@ const tealBtn = document.querySelector('.teal');
 const yellowBtn = document.querySelector('.yellow');
 const orangeBtn = document.querySelector('.orange');
 const greyBtn = document.querySelector('.grey');
+
+
+
 
 // ----------------------------------------------------
 
@@ -72,11 +76,6 @@ function template() {
   const red = document.createElement('div');
   red.className='color-btn red'
   divColorContainer.appendChild(red);
-
-  red.onclick = function() {
-    backgroundColor.style.background='lightcoral';
-  }
-
   const blue = document.createElement('div');
   blue.className='color-btn blue'
   divColorContainer.appendChild(blue);
@@ -99,6 +98,15 @@ function template() {
 
 // Create a new list - event listener
 createNewListBtn.addEventListener('click', template);
+
+let red = document.querySelector('.red');
+red.addEventListener('click', () => {
+  backgroundColor.style.background='lightcoral';
+});
+  
+deleteList.addEventListener('click', () => {
+  listContainer.style.display='none';
+});
 
 function createListElement() {
   let li = document.createElement('li'); // will create an <li> element
@@ -135,13 +143,11 @@ function clickAddListItem() {
 
 // Event Listeners
 
-deleteList.addEventListener('click', () => {
-  deleteList.style.display='none';
-});
 
-redBtn.addEventListener('click', () => {
-  backgroundColor.style.background='lightcoral';
-});
+
+// redBtn.addEventListener('click', () => {
+//   backgroundColor.style.background='lightcoral';
+// });
 
 blueBtn.addEventListener('click', () => {
   backgroundColor.style.background='lightblue';
