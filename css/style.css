@@ -48,7 +48,6 @@ body {
 }
 
 .list-container {
-  /* display: none; */
   display: flex;
   flex-direction: column;
   width: 350px;
@@ -57,6 +56,10 @@ body {
   background-color: lightblue;
   border-radius: 5px;
   box-shadow: black 2px 2px 5px;
+}
+
+.toggle {
+  display: none;
 }
 
 .list-heading {

@@ -97,10 +97,10 @@ function template() {
 // Create a new list - event listener
 createNewListBtn.addEventListener('click', template);
 
-  
-deleteList.addEventListener('click', () => {
-  listContainer.style.display='none';
-});
+deleteList.addEventListener('click', toggleList);
+function toggleList() {
+  listContainer.classList.toggle('toggle');
+}
 
 function createListElement() {
   let li = document.createElement('li'); // will create an <li> element
