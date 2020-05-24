@@ -12,7 +12,6 @@ const listInput = document.querySelector('input.user-input');
 const ul = document.querySelector('ul');
 
 // color buttons and background color target
-const backgroundColor = document.querySelector('.list-container');
 const redBtn = document.querySelector('.red');
 const blueBtn = document.querySelector('.blue');
 const greenBtn = document.querySelector('.green');
@@ -20,9 +19,6 @@ const tealBtn = document.querySelector('.teal');
 const yellowBtn = document.querySelector('.yellow');
 const orangeBtn = document.querySelector('.orange');
 const greyBtn = document.querySelector('.grey');
-
-
-
 
 // ----------------------------------------------------
 
@@ -73,6 +69,8 @@ function template() {
   const divColorContainer = document.createElement('div');
   divColorContainer.className='color-container';
   divContainer.appendChild(divColorContainer);
+
+  // red button
   const red = document.createElement('div');
   red.className='color-btn red'
   divColorContainer.appendChild(red);
@@ -99,10 +97,6 @@ function template() {
 // Create a new list - event listener
 createNewListBtn.addEventListener('click', template);
 
-let red = document.querySelector('.red');
-red.addEventListener('click', () => {
-  backgroundColor.style.background='lightcoral';
-});
   
 deleteList.addEventListener('click', () => {
   listContainer.style.display='none';
@@ -121,11 +115,11 @@ function createListElement() {
 
   li.addEventListener('click', completedItem); // listening for 'click' on <li> elements and run function completedItems if <li> element 'clicked'
 
-  // delete button
-  let deleteBtn = document.createElement('button');
-  deleteBtn.appendChild(document.createTextNode('x')); //append deletebtn with text 'X'
-  li.appendChild(deleteBtn); // add the delete button to the <li> element
-  deleteBtn.addEventListener('click', deleteListItem); // delete <li> when delete button is clicked with function
+  // delete <li> button
+  let deleteLiBtn = document.createElement('button');
+  deleteLiBtn.appendChild(document.createTextNode('x')); //append deletebtn with text 'X'
+  li.appendChild(deleteLiBtn); // add the delete button to the <li> element
+  deleteLiBtn.addEventListener('click', deleteListItem); // delete <li> when delete button is clicked with function
 
   // function to delete list items
   function deleteListItem() {
@@ -145,32 +139,32 @@ function clickAddListItem() {
 
 
 
-// redBtn.addEventListener('click', () => {
-//   backgroundColor.style.background='lightcoral';
-// });
+redBtn.addEventListener('click', () => {
+  listContainer.style.background='lightcoral';
+});
 
 blueBtn.addEventListener('click', () => {
-  backgroundColor.style.background='lightblue';
+  listContainer.style.background='lightblue';
 });
 
 greenBtn.addEventListener('click', () => {
-  backgroundColor.style.background='lightgreen';
+  listContainer.style.background='lightgreen';
 });
 
 tealBtn.addEventListener('click', () => {
-  backgroundColor.style.background='lightseagreen';
+  listContainer.style.background='lightseagreen';
 });
 
 yellowBtn.addEventListener('click', () => {
-  backgroundColor.style.background='rgb(207, 207, 12)';
+  listContainer.style.background='rgb(207, 207, 12)';
 });
 
 orangeBtn.addEventListener('click', () => {
-  backgroundColor.style.background='lightsalmon';
+  listContainer.style.background='lightsalmon';
 });
 
 greyBtn.addEventListener('click', () => {
-  backgroundColor.style.background='rgb(185, 185, 185)';
+  listContainer.style.background='rgb(185, 185, 185)';
 });
 
 addBtn.addEventListener('click', clickAddListItem);
