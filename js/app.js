@@ -54,30 +54,37 @@ addBtn.addEventListener('click', clickAddListItem);
 // COLOR Button Event Listeners
 redBtn.addEventListener('click', () => {
   listContainer.style.background='lightcoral';
+  document.body.style.background= 'linear-gradient(to right, #d66d75, #e29587)';
 });
 
 blueBtn.addEventListener('click', () => {
   listContainer.style.background='lightblue';
+  document.body.style.background='linear-gradient(to right, #2193b0, #6dd5ed)';
 });
 
 greenBtn.addEventListener('click', () => {
   listContainer.style.background='yellowgreen';
+  document.body.style.background='linear-gradient(to right, #11998e, #38ef7d)';
 });
 
 tealBtn.addEventListener('click', () => {
   listContainer.style.background='lightseagreen';
+  document.body.style.background='linear-gradient(to right, #134e5e, #71b280)';
 });
 
 yellowBtn.addEventListener('click', () => {
   listContainer.style.background='rgb(207, 207, 12)';
+  document.body.style.background='linear-gradient(to right, #cac531, #f3f9a7)';
 });
 
 orangeBtn.addEventListener('click', () => {
   listContainer.style.background='lightsalmon';
+  document.body.style.background='linear-gradient(to right, #f46b45, #eea849)';
 });
 
 greyBtn.addEventListener('click', () => {
   listContainer.style.background='rgb(185, 185, 185)';
+  document.body.style.background='linear-gradient(to right, #8e9eab, #eef2f3)';
 });
 
 
